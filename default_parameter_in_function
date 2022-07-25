@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int sum(int a, int b=20)
+{
+	int result=a+b;
+	return (result);
+	
+}
+int main()
+{
+	int a=100,b=200;
+	int result=sum(a,b);
+	cout<<"the result of case 1 ::"<<result<<endl;
+	result=sum(a);                //default it will take b value of 20
+  
+	cout<<"reslut of case 2 ::"<<result<<endl;
+	return 0;
+}
