@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int i;
+	double d;
+	
+	//declare references
+	int& r=i;
+	double& s=d;
+	i=3;
+	d=19.7;
+	
+	cout<<"value of i::"<<i<<endl;
+	cout<<"value of i references :: "<<r<<endl;
+	
+	cout<<"value of d::"<<d<<endl;
+	cout<<"value of d references:: "<<s<<endl;
+	
+	return 0;
+	
+}
