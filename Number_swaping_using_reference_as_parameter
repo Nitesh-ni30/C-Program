@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+//Number_swaping_using_reference_as_parameter
+
+int swap(int& x,int& y);
+int main()
+{
+	int a=300,b=700;
+	
+	cout<<"value of a before swap::"<<a<<endl;
+	cout<<"value of b before swap::"<<b<<endl;
+	swap(a,b);
+	cout<<"value of a after swap::"<<a<<endl;
+	cout<<"value of b after swap::"<<b<<endl;	
+}
+
+int swap(int& x, int& y)
+{
+	int temp=x;
+	x=y;
+	y=temp;
+	return 0;
+}
