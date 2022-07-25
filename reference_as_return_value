@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+double vals[]= {10.2,33.5,66.4,64.5,334.5,234};
+
+double& setvalues(int i)
+{
+	return vals[i];
+}
+
+int main()
+{
+	cout<<"value before change ::"<<endl;
+	for(int i=0;i<6;i++)
+	{
+		cout<<"vals["<<i<<"]"<<vals[i]<<endl;
+	}
+	setvalues(1)=45.6;
+	setvalues(5)=33.2;
+	
+	cout<<"value after change::"<<endl;
+	for(int i=0;i<6;i++)
+	  cout<<"vals["<<i<<"]"<<vals[i]<<endl;
+
+return 0;
+	 
+}
