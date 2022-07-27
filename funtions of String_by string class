@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+#include<string.h>
+
+// funtions of String by string class
+
+int main()
+{
+   string  str1= "hello";
+   string str2= "world";
+   string str3;
+   int length;
+   
+   str3=str2;
+   cout<<"copy of String 2 in string 3 :: "<<str3<<endl;
+   
+   str3=str1+str2;
+   cout<<"string1 after concatenates::"<<str3<<endl;
+   
+   length=str3.size() ;
+   cout<<"length of 2nd string ::"<<length<<endl;
+   
+ 
+   return 0;
+}
